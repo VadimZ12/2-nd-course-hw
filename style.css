@@ -135,3 +135,50 @@
   .gametwo {
     flex-wrap: wrap-reverse;
   }
+
+  @media (max-width: 767px) {
+    .center {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .top__content {
+      padding-top: 238px;
+      align-items: center;
+    }
+    .top__heading {
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      width: 100%;
+    }
+    .top__text {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .play-store__game {
+      width: 343px;
+    }
+    .game {
+      gap: 64px;
+      padding-top: 50px;
+      padding-bottom: 85px;
+    }
+    .game__content {
+      align-items: center;
+    }
+    .game__heading {
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      width: 100%;
+    }
+    .game__text {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      width: 100%;
+    }
+  }
