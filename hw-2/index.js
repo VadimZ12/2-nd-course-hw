@@ -92,26 +92,31 @@
 
 // // Задание 7
 
-// let userNumber = Number(prompt('Пожалуйста, введите любое число'));
+// let userNumber = prompt('Пожалуйста, введите любое число');
 // console.log(userNumber);
-// if (isNaN(userNumber)) {
-//     console.log('Вы ввели не число, попробуйте сначала');
-// } else {
+// if (userNumber === null || userNumber === '' || userNumber.includes(' ')) {
+//     console.log('Вы ввели не число, чтобы попробовать еще раз - обновите страницу');
+// } else if (userNumber >= 0 || userNumber <= 0) {
 //     (userNumber % 2 === 0) ? console.log('Число четное') : console.log('Число нечетное');
+// } else {
+//     console.log('Вы ввели не число, чтобы попробовать еще раз - обновите страницу');
 // }
 
 // // Задание 8
 
-// let clientOS = Number(prompt('Выберите вашу операционую систему: 0 - iOS, 1 - Android'));
-// let clientDeviceYear = Number(prompt('Введите год выпуска вашего устройства'));
-
-// if (clientOS === 0 && clientDeviceYear >= 2015) {
+// let clientOS = prompt('Выберите вашу операционую систему: 0 - iOS, 1 - Android');
+// console.log(clientOS);
+// let clientDeviceYear = prompt('Введите год выпуска вашего устройства');
+// console.log(clientDeviceYear);
+// if (clientOS === null || clientOS === '' || clientDeviceYear === null || clientDeviceYear === '') {
+//     console.log('Вы не ввели требуемые данные');
+// } else if (Number(clientOS) === 0 && Number(clientDeviceYear) >= 2015) {
 //     console.log('Установите версию приложения для iOS по ссылке');
-// } else if (clientOS === 0 && clientDeviceYear <= 2015) {
+// } else if (Number(clientOS) === 0 && Number(clientDeviceYear) <= 2015) {
 //     console.log('Установите облегченную версию приложения для iOS по ссылке');
-// } else if (clientOS === 1 && clientDeviceYear >= 2015) {
+// } else if (Number(clientOS) === 1 && Number(clientDeviceYear) >= 2015) {
 //     console.log('Установите версию приложения для Android по ссылке');
-// } else if (clientOS === 1 && clientDeviceYear <= 2015) {
+// } else if (Number(clientOS) === 1 && Number(clientDeviceYear) <= 2015) {
 //     console.log('Установите облегченную версию приложения для iOS по ссылке');
 // } else {
 //     console.log('Вы не ввели требуемые данные');
