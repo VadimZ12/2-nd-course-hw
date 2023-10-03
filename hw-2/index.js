@@ -93,8 +93,8 @@
 // // Задание 7
 
 // let userNumber = prompt('Пожалуйста, введите любое число');
-// console.log(userNumber);
-// if (userNumber === null || userNumber === '' || userNumber.includes(' ')) {
+// userNumber = userNumber.trim();
+// if (userNumber === null || userNumber === '') {
 //     console.log('Вы ввели не число, чтобы попробовать еще раз - обновите страницу');
 // } else if (userNumber >= 0 || userNumber <= 0) {
 //     (userNumber % 2 === 0) ? console.log('Число четное') : console.log('Число нечетное');
@@ -105,9 +105,9 @@
 // // Задание 8
 
 // let clientOS = prompt('Выберите вашу операционую систему: 0 - iOS, 1 - Android');
-// console.log(clientOS);
+// clientOS = clientOS.trim();
 // let clientDeviceYear = prompt('Введите год выпуска вашего устройства');
-// console.log(clientDeviceYear);
+// clientDeviceYear = clientDeviceYear.trim();
 // if (clientOS === null || clientOS === '' || clientDeviceYear === null || clientDeviceYear === '') {
 //     console.log('Вы не ввели требуемые данные');
 // } else if (Number(clientOS) === 0 && Number(clientDeviceYear) >= 2015) {
