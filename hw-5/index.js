@@ -76,3 +76,35 @@
 // for (let i = 0; i < arr.length - 1; i++) {
 //     console.log(arr[i] + arr[i + 1]);
 // }
+
+// Задание 11
+
+// let numbers = [2, 3, 10, 5]
+
+// function getArrSquare(arr) {
+//     return arr.map(num => num**2);
+// }
+
+// let numbersSquare = getArrSquare(numbers);
+
+// console.log(numbersSquare);
+
+// Задание 12
+
+// function getLengthWords(arr) {
+//     return arr.map(word => word.length);   
+// }
+
+// let words = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+// let wordsLength = getLengthWords(words);
+
+// console.log(wordsLength);
+
+// Задание 13
+
+// function filterPositive(arr) {
+//     return arr.filter(number => number < 0)
+// }
+
+// console.log(filterPositive([-1, 0, 5, -10, 56]));
+// console.log(filterPositive([-25, 25, 0, -1000, -2]));
