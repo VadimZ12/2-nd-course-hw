@@ -15,3 +15,18 @@ function gameSeasons() {
         return 'Осень';
     }
 }
+
+function gameFruits() {
+    const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruits = fruits.sort(() => Math.random() - 0.5);
+        alert(fruits);
+    let firstElement = prompt('Чему равнялся первый элемент массива?');
+    let lastElement = prompt('Чему равнялся последний элемент массива?');
+    if (firstElement === fruits[0] && lastElement === fruits[fruits.length - 1]) {
+        alert('Поздравляю! Вы угадали оба элемента!');
+    } else if (firstElement === fruits[0] || lastElement === fruits[fruits.length - 1]) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Вы ответили неверно!');
+    }
+}
