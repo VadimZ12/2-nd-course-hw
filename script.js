@@ -17,16 +17,19 @@ function gameSeasons() {
 }
 
 function gameFruits() {
-    const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
     fruits = fruits.sort(() => Math.random() - 0.5);
-        alert(fruits);
+    alert(fruits);
+
     let firstElement = prompt('Чему равнялся первый элемент массива?');
     let lastElement = prompt('Чему равнялся последний элемент массива?');
+
     if (firstElement === fruits[0] && lastElement === fruits[fruits.length - 1]) {
-        alert('Поздравляю! Вы угадали оба элемента!');
+        return('Поздравляю! Вы угадали оба элемента!');
     } else if (firstElement === fruits[0] || lastElement === fruits[fruits.length - 1]) {
-        alert('Вы были близки к победе!');
+        return('Вы были близки к победе!');
     } else {
-        alert('Вы ответили неверно!');
+        return('Вы ответили неверно!');
     }
 }
