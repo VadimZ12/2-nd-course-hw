@@ -7,11 +7,10 @@
 // Задание 2
 
 // function searchStart(arr, str) {
-//     arr.forEach(elem => {
-//         if (elem.toLowerCase().startsWith(str.toLowerCase())) {
-//             console.log(elem);
-//         }
-//     });
+//     arr = arr.filter(function (arrElem) {
+//         return arrElem.toLowerCase().startsWith(str)
+//     })
+//     console.log(arr);
 // }
 
 // searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
